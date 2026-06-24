@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, user-scalable=no" />
+    <title>Board Game</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet" />
+
+    <link rel="stylesheet" href="styles/base.css" />
+    <link rel="stylesheet" href="styles/wheel.css" />
+
+    <script defer src="src/wheel.js"></script>
+
+    <script src="https://zimjs.org/cdn/easystar-0.4.3.min.js" defer></script>
+
+    <script>
+      document.Blob = Blob;
+      document.Window = Window;
+    </script>
+
+    <script type="module" src="src/game.js"></script>
+  </head>
+  <body>
+    <div class="wheel-container">
+      <div class="outer-container">
+        <div class="arrow"></div>
+        <div class="border"></div>
+      </div>
+
+      <div class="container">
+        <div class="spinner">
+          <div class="section">1</div>
+          <div class="section">2</div>
+          <div class="section">3</div>
+          <div class="section">4</div>
+          <div class="section">5</div>
+          <div class="section">6</div>
+          <div class="section">7</div>
+          <div class="section">8</div>
+          <div class="section">9</div>
+          <div class="section">10</div>
+        </div>
+        <div class="spin-button" id="spin" data-value="">
+          <div class="button-shadow"></div>
+          <button class="button btn">
+            <svg fill="#fff" xmlns="http://www.w3.org/2000/svg" class="play" viewBox="0 0 24 24">
+              <path d="M19.669 10.385L6.199 2.257c-1.094-.66-2.77-.02-2.77 1.613v16.253c0 1.465 1.557 2.348 2.77 1.613l13.47-8.124c1.201-.723 1.205-2.504 0-3.227z"></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
